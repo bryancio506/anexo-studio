@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0F0F0F;
+  --red: #FF4D1C;
+  --cream: #F7F5F0;
+  --muted: #6B6B6B;
+  --border: #E2DDD6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.font-head { font-family: 'Syne', sans-serif; }
+
+/* Loading screen */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; pointer-events: none; }
+}
+
+@keyframes squarePop {
+  0% { transform: scale(0) rotate(-12deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(3deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes nameReveal {
+  0% { opacity: 0; transform: translateY(10px) skewX(-4deg); }
+  100% { opacity: 1; transform: translateY(0) skewX(0deg); }
+}
+
+@keyframes tagReveal {
+  0% { opacity: 0; }
+  100% { opacity: 0.45; }
+}
+
+@keyframes screenExit {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.04); }
+}
+
+/* Fade in para el contenido principal */
+@keyframes contentIn {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.sq1 { animation: squarePop 0.4s cubic-bezier(0.34,1.56,0.64,1) 0.2s both; }
+.sq2 { animation: squarePop 0.4s cubic-bezier(0.34,1.56,0.64,1) 0.4s both; }
+.sq3 { animation: squarePop 0.4s cubic-bezier(0.34,1.56,0.64,1) 0.55s both; }
+.sq4 { animation: squarePop 0.4s cubic-bezier(0.34,1.56,0.64,1) 0.7s both; }
+.name-anim { animation: nameReveal 0.5s ease 1.0s both; }
+.tag-anim { animation: tagReveal 0.6s ease 1.4s both; }
+.screen-exit { animation: screenExit 0.5s ease forwards; }
+.content-in { animation: contentIn 0.6s ease 0.1s both; }
+
+/* scroll fade-in sections */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal { opacity: 0; }
+.reveal.visible { animation: slideUp 0.6s ease forwards; }
