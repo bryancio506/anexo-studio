@@ -5,7 +5,7 @@ const WaIcon = () => (
 )
 
 export default function CtaFinal() {
-  const WA = "https://wa.me/50600000000?text=Hola%20Anexo%20Studio%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20planes"
+  const WA = "https://wa.me/50688615958?text=Hola%20Anexo%20Studio%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20planes"
   return (
     <>
       <section style={{ background: "#0F0F0F", color: "white", textAlign: "center", padding: "6rem 2rem" }}>
@@ -43,7 +43,7 @@ export default function CtaFinal() {
       }}>
         <p style={{ color: "rgba(255,255,255,0.28)", fontSize: "0.82rem" }}>
           © {new Date().getFullYear()} Anexo Studio · Costa Rica ·{" "}
-          <a href="https://wa.me/50600000000" style={{ color: "rgba(255,255,255,0.45)" }}>WhatsApp</a>
+          <a href="https://wa.me/50688615958" style={{ color: "rgba(255,255,255,0.45)" }}>WhatsApp</a>
         </p>
       </footer>
     </>

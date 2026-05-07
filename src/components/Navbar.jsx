@@ -5,7 +5,7 @@ const WaIcon = () => (
 )
 
 export default function Navbar() {
-  const WA = "https://wa.me/50600000000?text=Hola%20Anexo%20Studio%2C%20quiero%20información"
+  const WA = "https://wa.me/50688615958?text=Hola%20Anexo%20Studio%2C%20quiero%20información"
 
   return (
     <nav style={{ background: "#0F0F0F", position: "sticky", top: 0, zIndex: 100 }}>

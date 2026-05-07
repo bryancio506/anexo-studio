@@ -105,7 +105,7 @@ export default function Planes() {
               </ul>
 
               <a
-                href={`https://wa.me/50600000000?text=${encodeURIComponent(p.waMsg)}`}
+                href={`https://wa.me/50688615958?text=${encodeURIComponent(p.waMsg)}`}
                 target="_blank" rel="noreferrer"
                 style={{
                   display: "block", textAlign: "center",

@@ -7,7 +7,7 @@ const WaIcon = () => (
 const chips = ["Tiendas","Restaurantes y sodas","Maestros de obras","Salones de belleza","Veterinarias","Negocios locales"]
 
 export default function Hero() {
-  const WA = "https://wa.me/50600000000?text=Hola%2C%20quiero%20una%20vitrina%20digital"
+  const WA = "https://wa.me/50688615958?text=Hola%2C%20quiero%20una%20vitrina%20digital"
 
   return (
     <>
