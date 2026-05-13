@@ -20,6 +20,26 @@ const servicios = [
     ),
   },
   {
+    titulo: "Aparecé en Google Maps",
+    desc: "Creamos o reclamamos tu ficha de Google Business Profile. Cuando alguien busque tu tipo de negocio en tu zona, aparecés vos.",
+    tag: "Add-on ₡10.000",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/>
+      </svg>
+    ),
+  },
+  {
+    titulo: "Bot & Automatizaciones",
+    desc: "Bot de WhatsApp que responde preguntas, muestra el catálogo y recibe pedidos automáticamente. Tu negocio atiende 24/7.",
+    tag: "Add-on desde ₡20.000",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+        <rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 11V7"/><circle cx="12" cy="4" r="2"/><path d="M8 11V9a4 4 0 018 0v2"/><path d="M9 16h.01M15 16h.01"/>
+      </svg>
+    ),
+  },
+  {
     titulo: "Gestión de redes sociales",
     desc: "Manejamos tu Instagram o Facebook: posts, stories y respuesta a mensajes. Vos solo te preocupás por tu negocio.",
     tag: "Plan Agencia",
@@ -66,7 +86,7 @@ export default function Servicios() {
     <section style={{ background: "#F7F5F0" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "5rem 2rem" }}>
         <p style={{ fontSize: "0.72rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#FF4D1C", fontWeight: 600, marginBottom: "0.6rem" }}>Qué hacemos</p>
-        <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "0.8rem" }}>
+        <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: "clamp(1.8rem,4vw,2.8rem)", letterSpacing: "-0.025em", lineHeight: 1.1, marginBottom: "0.8rem" }}>
           Todo lo que necesitás<br />para existir en internet
         </h2>
         <p style={{ color: "#6B6B6B", fontSize: "1.05rem", fontWeight: 300, marginBottom: "3rem" }}>Sin tecnicismos. Sin contratos. Sin sorpresas.</p>
@@ -89,7 +109,7 @@ export default function Servicios() {
               }}>
                 {s.icon}
               </div>
-              <h3 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: "1.1rem", marginBottom: "0.5rem" }}>{s.titulo}</h3>
+              <h3 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 600, fontSize: "1.05rem", marginBottom: "0.5rem", letterSpacing: "-0.01em" }}>{s.titulo}</h3>
               <p style={{ color: "#6B6B6B", fontSize: "0.88rem", lineHeight: 1.65, marginBottom: "1rem" }}>{s.desc}</p>
               <span style={{
                 background: "rgba(255,77,28,0.08)", color: "#FF4D1C",

@@ -10,7 +10,7 @@ export default function Proceso() {
     <section style={{ background: "#F7F5F0" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "5rem 2rem" }}>
         <p style={{ fontSize: "0.72rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#FF4D1C", fontWeight: 600, marginBottom: "0.6rem" }}>El proceso</p>
-        <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "0.8rem" }}>
+        <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: "clamp(1.8rem,4vw,2.8rem)", letterSpacing: "-0.025em", lineHeight: 1.1, marginBottom: "0.8rem" }}>
           En 48 horas, listo.
         </h2>
         <p style={{ color: "#6B6B6B", fontSize: "1.05rem", fontWeight: 300, marginBottom: "3.5rem" }}>Sin reuniones largas, sin ir a ningún lado.</p>
@@ -35,7 +35,7 @@ export default function Proceso() {
                 alignItems: "center", justifyContent: "center",
                 marginBottom: "1.25rem",
               }}>{p.n}</div>
-              <h4 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: "1rem", marginBottom: "0.5rem" }}>{p.titulo}</h4>
+              <h4 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 600, fontSize: "1rem", marginBottom: "0.5rem", letterSpacing: "-0.01em" }}>{p.titulo}</h4>
               <p style={{ color: "#6B6B6B", fontSize: "0.87rem", lineHeight: 1.65 }}>{p.desc}</p>
             </div>
           ))}

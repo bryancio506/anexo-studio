@@ -16,7 +16,7 @@ export default function CtaFinal() {
         <h2 style={{
           fontFamily: "'Syne',sans-serif",
           fontSize: "clamp(2rem,5vw,3.5rem)",
-          fontWeight: 800, letterSpacing: "-0.02em",
+          fontWeight: 700, letterSpacing: "-0.025em",
           lineHeight: 1.1, marginBottom: "1rem",
         }}>
           ¿Cuántos clientes te están<br />

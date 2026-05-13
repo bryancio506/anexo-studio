@@ -29,13 +29,13 @@ export default function Hero() {
           style={{
             position: "absolute",
             left: "50%",
-            top: "50%",
+            top: "46%",
             transform: "translate(-50%, -50%)",
-            width: "min(52vw, 300px)",
+            width: "min(68vw, 430px)",
             aspectRatio: "1072.35 / 1000",
             zIndex: 0,
             pointerEvents: "none",
-            opacity: 0.92,
+            filter: "drop-shadow(0 0 14px rgba(255,77,28,0.6)) drop-shadow(0 0 4px rgba(255,77,28,0.4))",
           }}
         >
           <svg
@@ -46,17 +46,16 @@ export default function Hero() {
             style={{ display: "block" }}
           >
             <defs>
-              <linearGradient id="heroCrMapFill" x1="12%" y1="8%" x2="88%" y2="92%">
-                <stop offset="0%" stopColor="#FF4D1C" stopOpacity="0.26" />
-                <stop offset="45%" stopColor="#FF4D1C" stopOpacity="0.14" />
-                <stop offset="100%" stopColor="#C73A14" stopOpacity="0.1" />
+              <linearGradient id="heroCrMapFill" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#FF4D1C" stopOpacity="0.1" />
+                <stop offset="100%" stopColor="#FF4D1C" stopOpacity="0.03" />
               </linearGradient>
             </defs>
             <path
               d={CR_OUTLINE.d}
               fill="url(#heroCrMapFill)"
-              stroke="rgba(255,77,28,0.42)"
-              strokeWidth={1.1}
+              stroke="rgba(255,77,28,0.75)"
+              strokeWidth={1.8}
               strokeLinejoin="round"
               strokeLinecap="round"
               vectorEffect="non-scaling-stroke"
@@ -65,11 +64,11 @@ export default function Hero() {
         </div>
 
         {/* Círculos decorativos */}
-        {[500, 750, 1000].map((s, i) => (
+        {[420, 650, 900].map((s, i) => (
           <div key={i} style={{
             position: "absolute",
             width: s, height: s, borderRadius: "50%",
-            border: `1px solid rgba(255,77,28,${0.12 - i * 0.035})`,
+            border: `1px solid rgba(255,77,28,${0.22 - i * 0.07})`,
             top: "50%", left: "50%",
             transform: "translate(-50%,-50%)",
             pointerEvents: "none",

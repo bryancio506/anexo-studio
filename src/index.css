@@ -20,6 +20,12 @@ body {
   color: var(--ink);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
 .font-head { font-family: 'Syne', sans-serif; }

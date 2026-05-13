@@ -2,9 +2,11 @@ import { useState, useCallback, useEffect, useRef } from "react"
 import LoadingScreen from "./components/LoadingScreen"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Clientes from "./components/Clientes"
 import Servicios from "./components/Servicios"
 import Planes from "./components/Planes"
 import Proceso from "./components/Proceso"
+import QuienesSomos from "./components/QuienesSomos"
 import CtaFinal from "./components/CtaFinal"
 
 export default function App() {
@@ -33,7 +35,9 @@ export default function App() {
           <Hero />
           <div className="reveal"><Servicios /></div>
           <div className="reveal"><Planes /></div>
+          <div className="reveal"><Clientes /></div>
           <div className="reveal"><Proceso /></div>
+          <div className="reveal"><QuienesSomos /></div>
           <div className="reveal"><CtaFinal /></div>
         </div>
       )}
