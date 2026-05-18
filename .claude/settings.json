@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:zephysoft.com)",
+      "Bash(xdg-open /home/romero/Documents/Personal/BussinessIdeas/web-dev/anexo-studio/docs/cotizacion-motolux.html)"
+    ]
+  }
+}

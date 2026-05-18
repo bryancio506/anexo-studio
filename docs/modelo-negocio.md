@@ -110,8 +110,9 @@ Agencia boutique costarricense de presencia digital para negocios pequeños y me
 
 ### 🏍️ Tienda / taller de motos — caso Motolux
 **Negocio real:** Motolux — Bicimotos y Repuestos · Tibás, San José (150 mtrs sur iglesia Tibás, carretera principal a San José)
-**Contacto:** WhatsApp +506 7120 7372 · Facebook: Motolux CR · Instagram: @motolux_cr
-**Situación:** El vendedor dijo "mande su presentación a este número, yo se lo reenvío al encargado."
+**Contacto vendedor:** WhatsApp +506 7120 7372 · Facebook: Motolux CR · Instagram: @motolux_cr
+**Contacto encargado:** +506 6489 6524 — **espera la llamada** (confirmado por el vendedor el 13/05/2026)
+**Estado:** ✅ Pitch enviado al vendedor → ✅ Vendedor reenvió y dio número del encargado → 🔜 Llamar al encargado
 
 **Dolor:** Clientes llaman para preguntar si tienen repuestos específicos. No tienen página web. Dependen del boca en boca y las redes sociales. No pueden mostrar inventario de modelos de bicimotos disponibles.
 
@@ -130,29 +131,73 @@ Agencia boutique costarricense de presencia digital para negocios pequeños y me
 #### 📱 Mensaje para reenviar al encargado (via el vendedor)
 
 ```
-Hola, buen día. Le escribe Bryan de Anexo Studio.
+Hola! Buenos días, soy el muchacho que pasó ayer ofreciendo el servicio de páginas web 👋
 
-El día de hoy me acerqué a Motolux y conversé con el equipo de ventas. Me comentaron que podría ser de interés lo que hacemos.
+Esto les puede mejorar bastante las ventas:
+*• Los clientes dejan de llamar a preguntar por el catálogo*
+*• El catálogo siempre está actualizado — se evitan errores de información*
+*• Se pueden automatizar pedidos y respuestas con un bot de WhatsApp: el cliente consulta, recibe info y hace su pedido sin que nadie tenga que estar pendiente*
+*• Mejor experiencia para el cliente, menos carga para el equipo*
 
-Somos un estudio costarricense que le ayudamos a tiendas como Motolux a tener presencia digital: página web con catálogo de bicimotos y repuestos, WhatsApp Business configurado y perfil en Google Maps para aparecer en búsquedas locales.
-
-Le comparto nuestra página para que vea ejemplos de lo que hacemos:
+Aquí la página de la agencia para que vean lo que hacemos:
 👉 https://anexo-studio.netlify.app
 
-El proceso es sencillo: todo se coordina por WhatsApp, sin reuniones largas, y entregamos en 48 horas.
+Con mucho gusto coordinamos una cita. El proceso es sencillo y hay mucho potencial — vitrina de modelos, catálogo de repuestos, WhatsApp Business y más.
 
-Quedamos atentos a cualquier consulta. 🙏
-Bryan — Anexo Studio
+Quedo atento 🙏 — Bryan, Anexo Studio
 ```
 
-#### 📱 Mensaje de seguimiento (si no hay respuesta en 3-5 días)
+#### 📱 Mensaje de WhatsApp al encargado (enviar ANTES de llamar)
+
+Mandar esto primero para que sepa quién llama y tenga el link a mano durante la conversación.
 
 ```
-Hola [Nombre del encargado], buenos días. Le escribe Bryan de Anexo Studio, le escribí hace unos días sobre la página web y catálogo digital para Motolux.
+Hola! Buenas tardes, soy Bryan — el muchacho que pasó por Motolux San Jose Centro, ofreciendo el servicio de páginas web 👋 El vendedor me pasó su número.
 
-Solo quería confirmar si recibió la información. Con gusto le hago una demostración rápida de cómo quedaría el catálogo de bicimotos y repuestos en línea — sin compromiso.
+Le escribo antes de llamarle para que vea lo que le puedo ofrecer:
 
-¿Le parece si lo coordinamos esta semana?
+• 📈 Mejora las ventas — catálogo de bicimotos y repuestos en línea, el cliente llega ya sabiendo lo que quiere
+• 🤖 Bot de WhatsApp que atiende automáticamente — responde consultas, muestra el catálogo y recibe pedidos sin que nadie tenga que estar pendiente
+• ✅ Evita errores humanos — precios e información siempre correctos y actualizados
+• 🌟 Mejor experiencia para el cliente — todo más ordenado, más profesional, más fácil de comprar
+• 📊 Análisis de datos de consumo — saber qué modelos y repuestos se consultan más, de dónde vienen los clientes y en qué horarios, para tomar mejores decisiones de negocio
+
+Aquí la página de la agencia para que vea ejemplos:
+👉 https://anexo-studio.netlify.app
+
+En un momento le llamo 📞 — Bryan, Anexo Studio
+```
+
+---
+
+#### 📞 Guión de la llamada
+
+**Apertura:**
+> "Hola, buenos días. Soy Bryan, le acabo de mandar un WhatsApp. El vendedor me pasó su número, me dijo que podía llamarle sobre el tema de la página web."
+
+**Si dice "sí, cuénteme":**
+> "Con gusto. Básicamente lo que hacemos es montar el catálogo de Motolux en línea — los modelos de bicimotos con foto y precio, los repuestos por categoría — para que los clientes lo vean sin tener que llamar a preguntar. Además podemos configurar un bot de WhatsApp que responde automáticamente y hasta recibe pedidos. Todo eso mejora la experiencia del cliente y le quita carga al equipo."
+
+**Propuesta concreta:**
+> "La idea sería coordinar algo corto esta semana, yo le muestro cómo quedaría y le explico los precios. No hay contrato, el proceso es sencillo y entregamos en 48 horas. ¿Tiene un momento disponible esta semana?"
+
+**Si pregunta precio:**
+> "Depende de lo que necesiten. El plan básico tiene un setup de ₡15.000 y ₡5.000 al mes de mantenimiento. Si le interesa agregar el bot de WhatsApp o el perfil de Google Maps, hay opciones adicionales. Pero eso lo vemos cuando nos reunamos."
+
+**Si dice "mándeme información":**
+> "Claro, ya le mandé el link por WhatsApp. Ahí puede ver ejemplos de vitrinas que hemos hecho. Cuando lo vea, ¿le parece si coordinamos una llamada cortita esta semana para hablar de lo específico para Motolux?"
+
+**Cierre:**
+> "Perfecto. Le confirmo día y hora por WhatsApp entonces. Muchas gracias."
+
+---
+
+#### 📱 Mensaje de seguimiento (si no responde la llamada)
+
+```
+Hola, intenté llamarle hace un momento. Soy Bryan, el de las páginas web — el vendedor de Motolux me pasó su número.
+
+Cuando tenga un momento con mucho gusto hablamos. No le quito más de 10 minutos. 🙏
 ```
 
 ---
@@ -357,6 +402,19 @@ Me acordé que usted tenía contactos en hoteles y eso. Cuando pueda le doy un v
 
 Cualquier referido también se lo agradezco 🤙
 ```
+
+
+**Mensaje alternativo2:**
+
+```
+Bien aqui vamos! Vieras que ando desarrollado esta agencia pequeña — Anexo Studio — haciendo páginas y presencia digital, atomatizaciones para negocios locales. Es un nicho se puede explotar bonito!
+
+Me acordé que usted tenía contactos en hoteles y asi. Cuando pueda lo ve, ver que le parece: https://anexo-studio.netlify.app
+
+CUulquier proyecto o referido aqui estoy ready!🤙
+```
+
+
 
 ---
 

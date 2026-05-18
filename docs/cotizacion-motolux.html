@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotización Motolux — Anexo Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0F0F0F;
+      --red:    #FF4D1C;
+      --cream:  #F7F5F0;
+      --muted:  #6B6B6B;
+      --border: #E2DDD6;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      color: var(--ink);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 52px 60px 72px;
+    }
+
+    /* ─── NAVBAR-STYLE HEADER ─── */
+    .doc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--ink);
+      padding: 18px 28px;
+      border-radius: 14px;
+      margin-bottom: 44px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-studio {
+      color: rgba(255,255,255,0.35);
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-left: 2px;
+    }
+
+    .header-contact {
+      text-align: right;
+      font-size: 0.76rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.75;
+    }
+
+    .header-contact strong {
+      color: rgba(255,255,255,0.85);
+      font-weight: 500;
+      display: block;
+    }
+
+    /* ─── CLIENT TITLE ─── */
+    .client-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+    }
+
+    .client-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 52pt;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .client-meta {
+      text-align: right;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.9;
+      font-weight: 300;
+      padding-bottom: 6px;
+    }
+
+    .client-meta strong { color: var(--ink); font-weight: 500; }
+
+    /* ─── SECTION LABEL (mismo patrón del site) ─── */
+    .section-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ─── HEADINGS ─── */
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 0.7rem;
+    }
+
+    /* ─── BODY TEXT ─── */
+    p.body {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 300;
+      line-height: 1.65;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ─── DIVIDER ─── */
+    .sep {
+      height: 1px;
+      background: var(--border);
+      margin: 36px 0;
+    }
+
+    /* ─── SECTION WRAPPER ─── */
+    .section { margin-bottom: 36px; }
+
+    /* ─── BULLET LIST ─── */
+    ul.doc {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 4px;
+    }
+
+    ul.doc li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.55;
+    }
+
+    ul.doc li .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--red);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    ul.doc li strong { color: var(--ink); font-weight: 500; }
+
+    /* ─── MODULE CARDS ─── */
+    .modules {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .module-card {
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.25rem;
+      background: var(--cream);
+    }
+
+    .module-card-head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .module-num {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--red);
+      background: rgba(255,77,28,0.08);
+      padding: 2px 7px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .module-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    .module-desc {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.55;
+    }
+
+    /* ─── PRICE TABLE ─── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.87rem;
+    }
+
+    thead th {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 7px 14px;
+      text-align: left;
+      border-bottom: 1.5px solid var(--border);
+    }
+
+    tbody td {
+      padding: 9px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--ink);
+      font-weight: 300;
+      font-size: 0.87rem;
+    }
+
+    tbody tr:last-child td { border-bottom: none; }
+
+    td.amt {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    tr.row-sub td {
+      background: var(--cream);
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    tr.row-total td {
+      background: var(--ink);
+      color: #fff;
+      font-weight: 500;
+      border-bottom: none;
+      font-size: 0.88rem;
+    }
+
+    tr.row-total td.amt {
+      color: var(--cream);
+      font-size: 0.95rem;
+    }
+
+    tr.row-pkg {
+      border: 2px solid var(--red);
+    }
+
+    tr.row-pkg td {
+      background: rgba(255,77,28,0.05);
+      border-bottom: none;
+    }
+
+    tr.row-pkg td.label-pkg {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    tr.row-pkg td.amt {
+      color: var(--red);
+      font-size: 1rem;
+    }
+
+    /* ─── PKG BADGE ─── */
+    .pkg-badge {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 100px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    /* ─── NOTE ─── */
+    .note {
+      background: var(--cream);
+      border-left: 3px solid var(--red);
+      padding: 10px 14px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 300;
+      margin-top: 12px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .note strong { color: var(--ink); font-weight: 500; }
+
+    /* ─── TIMELINE ─── */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .tl-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tl-row:last-child { border-bottom: none; }
+
+    .tl-week {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--red);
+      min-width: 80px;
+      padding-top: 2px;
+    }
+
+    .tl-desc {
+      font-size: 0.87rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    /* ─── PAYMENT PILLS ─── */
+    .pay-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .pay-pill {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .pay-pill .pk {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .pay-pill .pv {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--ink);
+    }
+
+    .pay-pill .ps {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 300;
+      margin-top: 2px;
+    }
+
+    /* ─── TERMS ─── */
+    ul.terms {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 4px;
+    }
+
+    ul.terms li {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 300;
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.55;
+    }
+
+    ul.terms li::before {
+      content: '·';
+      position: absolute;
+      left: 2px;
+      color: var(--red);
+      font-weight: 700;
+      font-size: 1rem;
+      top: -1px;
+    }
+
+    /* ─── FOOTER ─── */
+    .doc-footer {
+      background: var(--ink);
+      border-radius: 14px;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 52px;
+    }
+
+    .footer-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-logo span { color: rgba(255,255,255,0.3); }
+
+    .footer-info {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.4);
+      text-align: right;
+      line-height: 1.75;
+    }
+
+    /* ─── PRINT BUTTON ─── */
+    .print-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--red);
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 100px;
+      box-shadow: 0 4px 20px rgba(255,77,28,0.4);
+    }
+
+    /* ─── PRINT STYLES ─── */
+    @media print {
+      .print-btn { display: none; }
+      body { font-size: 9pt; }
+      .page { padding: 28px 40px; max-width: 100%; }
+      .doc-header, .doc-footer { border-radius: 8px; }
+      @page { size: A4; margin: 12mm; }
+    }
+  </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Exportar PDF →</button>
+
+<div class="page">
+
+  <!-- HEADER — navbar style -->
+  <div class="doc-header">
+    <div class="logo-wrap">
+      <!-- Logo: 2x2 grid exacto al Navbar.jsx -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;width:30px;height:30px;flex-shrink:0;">
+        <div style="border-radius:4px;background:#FF4D1C;opacity:1;"></div>
+        <div style="border-radius:4px;background:#FF4D1C;opacity:0.28;"></div>
+        <div style="border-radius:4px;background:#FF4D1C;opacity:0.28;"></div>
+        <div style="border-radius:4px;background:#FF4D1C;opacity:1;"></div>
+      </div>
+      <span class="logo-mark">ane<span style="color:#FF4D1C;">xo</span><span class="logo-studio"> studio</span></span>
+    </div>
+    <div class="header-contact">
+      <strong>Bryan Romero Chinchilla</strong>
+      San José, Costa Rica · (506) 8861-5958<br/>
+      bryan.romero.chinchilla@gmail.com · anexo-studio.netlify.app
+    </div>
+  </div>
+
+  <!-- CLIENT -->
+  <div class="client-block">
+    <div class="client-name">Motolux</div>
+    <div class="client-meta">
+      <strong>Para:</strong> Encargado / Dueño, Motolux CR<br/>
+      <strong>Fecha:</strong> 16 de mayo, 2026<br/>
+      <strong>Validez:</strong> 30 días naturales
+    </div>
+  </div>
+
+  <!-- 1. RESUMEN EJECUTIVO -->
+  <div class="section">
+    <p class="section-label">Resumen ejecutivo</p>
+    <h2>Digitalización integral para el grupo Motolux</h2>
+    <p class="body">
+      Propuesta para modernizar la presencia en línea de los tres negocios del grupo: Motolux (bicimotos, repuestos y taller), tienda de celulares y hostel. El objetivo es centralizar el catálogo, automatizar la atención al cliente con inteligencia artificial y generar datos reales de consumo para tomar mejores decisiones de negocio.
+    </p>
+    <p class="body">
+      Todo se coordina por WhatsApp. Sin reuniones largas. Sin contratos de largo plazo. Entrega de vitrinas básicas en <strong>48 horas</strong> si el material está listo desde el inicio.
+    </p>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 2. ALCANCE -->
+  <div class="section">
+    <p class="section-label">Alcance del proyecto</p>
+    <h2>Módulos del proyecto</h2>
+    <div class="modules">
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">01</span>
+          <span class="module-title">Vitrina Digital Motolux</span>
+        </div>
+        <p class="module-desc">Catálogo pesado de bicimotos, repuestos y taller. Diseño con colores y logo de Motolux. Sección por categorías, botón de WhatsApp por producto, mapa, horarios, código QR imprimible. Optimizada 100 % para celular.</p>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">02</span>
+          <span class="module-title">Vitrina Tienda de Celulares</span>
+        </div>
+        <p class="module-desc">Catálogo de equipos, accesorios y reparaciones. Botón de WhatsApp por producto. Código QR del local.</p>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">03</span>
+          <span class="module-title">Vitrina Hostel</span>
+        </div>
+        <p class="module-desc">Galería de habitaciones, tarifas, servicios, cómo llegar. Reserva directa por WhatsApp. Código QR del hostel.</p>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">04</span>
+          <span class="module-title">Bot RAG de WhatsApp (Inteligencia Artificial)</span>
+        </div>
+        <p class="module-desc">Bot entrenado con el catálogo real de los tres negocios. No sigue menú fijo — entiende preguntas en lenguaje natural y busca en el catálogo real. Atiende 24/7, recibe pedidos, agenda citas en el taller, transfiere al humano cuando se necesita. Mensaje automático fuera de horario.</p>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">05</span>
+          <span class="module-title">WhatsApp Business — 3 perfiles</span>
+        </div>
+        <p class="module-desc">Configuración profesional por negocio: foto de perfil, descripción, catálogo vinculado, mensajes automáticos de bienvenida y fuera de horario, etiquetas para organizar conversaciones.</p>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">06</span>
+          <span class="module-title">Analytics Dashboard</span>
+        </div>
+        <p class="module-desc">Panel con datos reales: artículos más buscados, horarios pico, fuentes de tráfico (Google, Instagram, WhatsApp, directo), volumen de mensajes al bot. Reporte mensual automático por WhatsApp o correo.</p>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">07</span>
+          <span class="module-title">Integración Sirett / Zephysoft <span style="color:var(--muted);font-weight:300;font-size:0.78rem;">— evaluación pendiente</span></span>
+        </div>
+        <p class="module-desc">Sincronización automática del inventario físico (Sirett) con la vitrina digital. Requiere confirmar disponibilidad de API con Zephysoft. Anexo Studio puede acompañar esa gestión. Ver precios detallados en la cotización.</p>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <span class="module-num">08</span>
+          <span class="module-title">Códigos QR × 3</span>
+        </div>
+        <p class="module-desc">Un QR por negocio en alta resolución, listo para imprimir y poner en el local, tarjetas o redes sociales. Incluido sin costo al contratar las tres vitrinas.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 3. STACK -->
+  <div class="section">
+    <p class="section-label">Desarrollo</p>
+    <h2>Stack tecnológico</h2>
+    <p class="body">
+      Las vitrinas se desarrollan en React + Vite con hosting en Netlify y dominio personalizado. Diseño responsivo para smartphones. El bot RAG usa la API de OpenAI o Anthropic como motor de IA, conectado a WhatsApp Business API. El dashboard integra Google Analytics 4 con reportes automáticos. La integración con Sirett depende de las opciones técnicas que confirme el soporte de Zephysoft de Costa Rica (L–V 9am–5pm, Sáb 9am–12pm).
+    </p>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 4. LÍNEA DE TIEMPO -->
+  <div class="section">
+    <p class="section-label">Línea de tiempo</p>
+    <h2>Cronograma estimado — 8 semanas</h2>
+    <p class="body">Desarrollo por etapas con revisiones cada 7 a 15 días para que el cliente se integre en el proceso y apruebe cada entregable antes de continuar.</p>
+    <div class="timeline" style="margin-top:12px;">
+      <div class="tl-row"><span class="tl-week">Semana 1–2</span><span class="tl-desc">Vitrinas Motolux + Celulares + Hostel</span></div>
+      <div class="tl-row"><span class="tl-week">Semana 3</span><span class="tl-desc">WhatsApp Business × 3 + Códigos QR</span></div>
+      <div class="tl-row"><span class="tl-week">Semana 4–6</span><span class="tl-desc">Bot RAG — desarrollo, entrenamiento y pruebas</span></div>
+      <div class="tl-row"><span class="tl-week">Semana 7</span><span class="tl-desc">Analytics Dashboard</span></div>
+      <div class="tl-row"><span class="tl-week">Semana 8+</span><span class="tl-desc">Integración Sirett — sujeto a evaluación técnica con Zephysoft</span></div>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 5. COTIZACIÓN -->
+  <div class="section">
+    <p class="section-label">Propuesta económica</p>
+    <h2>Cotización</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Módulo</th>
+          <th style="text-align:right">Setup</th>
+          <th style="text-align:right">Mensual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01 — Vitrina Digital Motolux</td>
+          <td class="amt" style="text-align:right">₡95.000</td>
+          <td class="amt" style="text-align:right">₡20.000</td>
+        </tr>
+        <tr>
+          <td>02 — Vitrina Tienda de Celulares</td>
+          <td class="amt" style="text-align:right">₡50.000</td>
+          <td class="amt" style="text-align:right">₡12.000</td>
+        </tr>
+        <tr>
+          <td>03 — Vitrina Hostel</td>
+          <td class="amt" style="text-align:right">₡45.000</td>
+          <td class="amt" style="text-align:right">₡10.000</td>
+        </tr>
+        <tr>
+          <td>04 — Bot RAG WhatsApp IA <span style="color:var(--muted);font-size:0.78rem;font-weight:300;">incl. API de IA</span></td>
+          <td class="amt" style="text-align:right">₡120.000</td>
+          <td class="amt" style="text-align:right">₡35.000</td>
+        </tr>
+        <tr>
+          <td>05 — WhatsApp Business × 3 perfiles</td>
+          <td class="amt" style="text-align:right">₡30.000</td>
+          <td class="amt" style="text-align:right">—</td>
+        </tr>
+        <tr>
+          <td>06 — Analytics Dashboard</td>
+          <td class="amt" style="text-align:right">₡40.000</td>
+          <td class="amt" style="text-align:right">₡12.000</td>
+        </tr>
+        <tr>
+          <td>08 — Códigos QR × 3 <span style="color:var(--muted);font-size:0.78rem;font-weight:300;">incluido con las 3 vitrinas</span></td>
+          <td class="amt" style="text-align:right;color:var(--muted);">—</td>
+          <td class="amt" style="text-align:right;color:var(--muted);">—</td>
+        </tr>
+        <tr class="row-total">
+          <td><strong>Total lista</strong></td>
+          <td class="amt" style="text-align:right"><strong>₡380.000</strong></td>
+          <td class="amt" style="text-align:right"><strong>₡89.000/mes</strong></td>
+        </tr>
+        <tr class="row-sub">
+          <td colspan="3">Paquete completo — 15 % de descuento en setup · Ahorro de ₡57.000</td>
+        </tr>
+        <tr class="row-pkg">
+          <td class="label-pkg"><strong>Paquete integral</strong><span class="pkg-badge">⭐ Recomendado</span></td>
+          <td class="amt" style="text-align:right"><strong>₡323.000</strong></td>
+          <td class="amt" style="text-align:right"><strong>₡89.000/mes</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <strong>Con integración Sirett (escenario A — API disponible):</strong> se suman ₡100.000–₡150.000 de setup y ₡25.000/mes adicionales. Total: ₡423.000–₡473.000 setup · ₡114.000/mes.<br/>
+      Precios en colones costarricenses. No incluyen IVA.
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 6. HITOS -->
+  <div class="section">
+    <p class="section-label">Milestones</p>
+    <h2>Hitos de pago</h2>
+    <table>
+      <thead>
+        <tr><th>Hito</th><th>Momento</th><th style="text-align:right">Monto</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Inicio de cada módulo</td><td>Al recibir insumos y aprobar</td><td class="amt" style="text-align:right">50 % del setup</td></tr>
+        <tr><td>Entrega de cada módulo</td><td>Al aprobar el entregable</td><td class="amt" style="text-align:right">50 % del setup</td></tr>
+        <tr><td>Mensualidad</td><td>Primero de cada mes</td><td class="amt" style="text-align:right">₡89.000</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 7. MODALIDAD DE PAGO -->
+  <div class="section">
+    <p class="section-label">Modalidad de pago</p>
+    <h2>Forma de pago</h2>
+    <div class="pay-grid">
+      <div class="pay-pill">
+        <div class="pk">Método</div>
+        <div class="pv">SINPE Móvil</div>
+        <div class="ps">8861-5958 · Bryan Romero</div>
+      </div>
+      <div class="pay-pill">
+        <div class="pk">Estructura</div>
+        <div class="pv">50 / 50</div>
+        <div class="ps">50 % al iniciar · 50 % al entregar</div>
+      </div>
+      <div class="pay-pill">
+        <div class="pk">Compromiso</div>
+        <div class="pv">Sin contrato</div>
+        <div class="ps">Cancelás la mensualidad cuando querás</div>
+      </div>
+      <div class="pay-pill">
+        <div class="pk">Inicio</div>
+        <div class="pv">24 h</div>
+        <div class="ps">Después del primer SINPE e insumos</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 8. GARANTÍA -->
+  <div class="section">
+    <p class="section-label">Política de Garantía</p>
+    <h2>Soporte post-entrega</h2>
+    <p class="body">
+      Al poner en producción cada módulo entra en vigencia un servicio de garantía de <strong>30 días de soporte sin costo adicional</strong>. Cada entregable incluye hasta 3 rondas de cambios; si se requieren más, se acuerda un valor adicional antes de ejecutarlas.
+    </p>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 9. OPCIONALIDADES -->
+  <div class="section">
+    <p class="section-label">Opcionalidades</p>
+    <h2>Módulos adicionales</h2>
+    <p class="body">
+      En el proceso se pueden detectar más necesidades sin sobrecargar la experiencia del usuario. La integración con Sirett es el módulo más variable: el costo final depende de lo que el soporte de Zephysoft confirme. Se puede iniciar con el paquete base y agregar módulos por fases según prioridades del negocio.
+    </p>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 10. RECOMENDACIONES -->
+  <div class="section">
+    <p class="section-label">Recomendaciones | Consideraciones</p>
+    <h2>Próximos pasos</h2>
+    <ul class="doc">
+      <li><span class="dot"></span><span>Aprobar los módulos a contratar (paquete completo o por fases)</span></li>
+      <li><span class="dot"></span><span>Coordinar contacto con Zephysoft para evaluar integración Sirett</span></li>
+      <li><span class="dot"></span><span>Cliente provee: logo, fotos y catálogo de productos / precios en Excel o Google Sheets</span></li>
+      <li><span class="dot"></span><span>Primer SINPE del 50 % del setup para iniciar</span></li>
+      <li><span class="dot"></span><span>Inicio del desarrollo en 24 h — vitrinas entregadas en 48 h si el material está listo</span></li>
+    </ul>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- 11. CONSIDERACIONES GENERALES -->
+  <div class="section">
+    <p class="section-label">Consideraciones Generales</p>
+    <ul class="terms">
+      <li>Los contenidos (textos, fotografías, logo, recursos gráficos) deben ser provistos por el cliente.</li>
+      <li>El trabajo inicia únicamente cuando se hayan entregado todos los insumos necesarios.</li>
+      <li>Cada entregable incluye hasta 3 rondas de cambios; más rondas se cotizan por separado.</li>
+      <li>En caso de cancelación después de iniciado, el cliente paga la parte proporcional completada.</li>
+      <li>Una vez finalizado y pagado, el cliente es titular de los derechos sobre el trabajo.</li>
+      <li>Anexo Studio podrá utilizar el proyecto en su portafolio con fines de demostración.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER — navbar style -->
+  <div class="doc-footer">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;width:22px;height:22px;flex-shrink:0;">
+        <div style="border-radius:3px;background:#FF4D1C;opacity:1;"></div>
+        <div style="border-radius:3px;background:#FF4D1C;opacity:0.28;"></div>
+        <div style="border-radius:3px;background:#FF4D1C;opacity:0.28;"></div>
+        <div style="border-radius:3px;background:#FF4D1C;opacity:1;"></div>
+      </div>
+      <div class="footer-logo">ane<span style="color:#FF4D1C;">xo</span><span> studio</span></div>
+    </div>
+    <div class="footer-info">
+      Costa Rica · WhatsApp 8861-5958<br/>
+      bryan.romero.chinchilla@gmail.com · anexo-studio.netlify.app
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
